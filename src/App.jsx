@@ -1,0 +1,31 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from './components/Header';
+import Footer from './components/footer';
+import './App.css';
+
+const App = () => {
+  return (
+    <Router>
+      
+      <div className="app-container">
+        <Header />
+
+        <Routes>
+          <Route path="/wire-cables" element={<div>Wire & Cables Page</div>} />
+          <Route path="/applications" element={<div>Applications Page</div>} />
+          <Route path="/services" element={<div>Services Page</div>} />
+          <Route path="/tools" element={<div>Tools Page</div>} />
+          <Route path="/blogs" element={<div>Blogs Page</div>} />
+          <Route path="/about-us" element={<div>About Us Page</div>} />
+          <Route path="/privacy-policy" element={<div>Privacy Policy</div>} />
+          <Route path="/terms" element={<div>Terms & Conditions</div>} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
+  );
+};
+
+export default App;

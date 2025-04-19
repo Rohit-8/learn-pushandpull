@@ -1,0 +1,69 @@
+.header {
+    height:74px;
+    background-color: hsl(220, 30%, 96%);
+    color: #221d1d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo-img {
+    height: 32px;
+    width:87px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 45px;
+  }
+  
+  .nav-link {
+    color: #131010;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+   /* .nav-link:hover {
+    color: #d1d5db; 
+  }   */
+    
+  .wire-cable:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+
+  .tools:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    
+  }
+  .applications:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+  .services:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+  .contact-us:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+  .about-us:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
