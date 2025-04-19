@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/home.css';
 import ManufacturingImage from '../assets/SCT_7317_22341 2.png';
 import WhatSetsUsApartImage from '../assets/SCT_7317_22341 1.png';
+import OurServicesImage from '../assets/ourServices.png';
+import ArrowDown from '../assets/arrow-down.png';
+import ArrowUp from '../assets/arrow-up.png';
 
 const Home = () => {
+  const [activeService, setActiveService] = useState('manufacture');
+
+  const toggleService = (service) => {
+    if (activeService === service) {
+      setActiveService(null);
+    } else {
+      setActiveService(service);
+    }
+  };
+
   return (
     <div className="home-container">
       <div className="content">
@@ -108,6 +121,74 @@ const Home = () => {
                 <div className="feature-icon one-stop"></div>
                 <h3>ONE STOP SHOP</h3>
                 <p>Mikro provides an all-in-one wire drawing Die solution, including consumables, diamond powders, inspection, polishing equipment, and expert support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="our-services-section">
+        <div className="our-services-wrapper">
+          <div className="services-left">
+            <div className={`service-item main-service ${activeService === 'manufacture' ? 'active' : ''}`}
+                 onClick={() => toggleService('manufacture')}>
+              <div className="service-header">
+                <h3>MANUFACTURE WIRE DRAWING DIES</h3>
+                <img src={activeService === 'manufacture' ? ArrowUp : ArrowDown} alt="toggle" />
+              </div>
+              <p>Expand your market reach and improve your user experience by developing mobile apps for Android, iOS, & windows.</p>
+              {activeService === 'manufacture' && (
+                <button className="know-more-btn">Know More</button>
+              )}
+            </div>
+
+            <div className={`service-item ${activeService === 'reconditioning' ? 'active' : ''}`}
+                 onClick={() => toggleService('reconditioning')}>
+              <div className="service-header">
+                <h3>Reconditioning and Repolishing of the Dies</h3>
+                <img src={activeService === 'reconditioning' ? ArrowUp : ArrowDown} alt="toggle" />
+              </div>
+            </div>
+
+            <div className={`service-item ${activeService === 'mcx' ? 'active' : ''}`}
+                 onClick={() => toggleService('mcx')}>
+              <div className="service-header">
+                <h3>Mikro Center For Excellence (MCX)</h3>
+                <img src={activeService === 'mcx' ? ArrowUp : ArrowDown} alt="toggle" />
+              </div>
+            </div>
+
+            <div className={`service-item ${activeService === 'installation' ? 'active' : ''}`}
+                 onClick={() => toggleService('installation')}>
+              <div className="service-header">
+                <h3>Machine Installation and Maintenance</h3>
+                <img src={activeService === 'installation' ? ArrowUp : ArrowDown} alt="toggle" />
+              </div>
+            </div>
+
+            <div className={`service-item ${activeService === 'machines1' ? 'active' : ''}`}
+                 onClick={() => toggleService('machines1')}>
+              <div className="service-header">
+                <h3>Manufacture Wire Drawing Machines for all the Sizes</h3>
+                <img src={activeService === 'machines1' ? ArrowUp : ArrowDown} alt="toggle" />
+              </div>
+            </div>
+
+            <div className={`service-item ${activeService === 'machines2' ? 'active' : ''}`}
+                 onClick={() => toggleService('machines2')}>
+              <div className="service-header">
+                <h3>Manufacture Wire Drawing Machines for all the Sizes</h3>
+                <img src={activeService === 'machines2' ? ArrowUp : ArrowDown} alt="toggle" />
+              </div>
+            </div>
+          </div>
+
+          <div className="services-right">
+            <div className="services-image">
+              <img src={OurServicesImage} alt="Our Services" />
+              <div className="services-overlay">
+                <h2>OUR</h2>
+                <h2>SERVICES</h2>
               </div>
             </div>
           </div>
