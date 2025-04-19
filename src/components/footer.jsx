@@ -31,10 +31,9 @@ const Footer = () => {
           </ul>
 
           <div className="social-icons">
-            <a href="#"><Facebook /></a>
-            {/* <a href="#"><vecteezy_social /></a> */}
-            <a href="#"><Linkedin/></a>
-            <a href="#"><Instagram /></a>
+            <a href="#"><img src={Facebook} alt="Facebook" /></a>
+            <a href="#"><img src={Linkedin} alt="LinkedIn" /></a>
+            <a href="#"><img src={Instagram} alt="Instagram" /></a>
           </div>
         </div>
       </div>
