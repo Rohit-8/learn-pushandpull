@@ -1,0 +1,102 @@
+.home-container {
+  background-image: url('../assets/MMH112IMG_0368 (1) 1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section {
+  position: relative;
+  padding-top: 150px;
+  margin-bottom: auto;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1116px;
+  height: 275px;
+  background: #FF0000BD;
+  z-index: -1;
+}
+
+.hero-text {
+  padding: 40px 100px;
+}
+
+.hero-text h1 {
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.company-info {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.company-info::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  background: linear-gradient(90deg, #FFFFFF 50%, #F5F5F5 50%);
+  z-index: -1;
+}
+
+.mikro-section, .hardten-section {
+  flex: 1;
+  padding: 40px 100px;
+  position: relative;
+}
+
+.mikro-section h2, .hardten-section h2 {
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.mikro-section p, .hardten-section p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 400px;
+}
+
+.mikro-section {
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  background: #FFFFFF;
+  z-index: 2;
+}
+
+.hardten-section {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  background: #F5F5F5;
+  margin-left: -100px;
+  padding-left: 150px;
+} 

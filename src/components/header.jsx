@@ -1,43 +1,36 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/header.css';
 import MikroLogo from '../assets/MikroLogo.png';
 
 const Header = () => {
-    const [showDropdown, setShowDropdown] = useState(false);
+  return (
+    <header className="header">
+      <div className="nav-container">
+        <Link to="/" className="logo">
+          <img src={MikroLogo} alt="Mikro Logo" />
+        </Link>
 
-    const toggleDropdown = () => setShowDropdown(!showDropdown);
+        <nav>
+          <ul className="nav-links">
+            <li><Link to="/wire-cables" className="nav-link">Wire & Cables</Link></li>
+            <li><Link to="/tools" className="nav-link">Tools</Link></li>
+            <li><Link to="/applications" className="nav-link">Applications</Link></li>
+            <li><Link to="/services" className="nav-link">Services</Link></li>
+            <li><Link to="/about-us" className="nav-link">About Us</Link></li>
+          </ul>
+        </nav>
 
-    return (
-        <header className="header">
-            <div className="logo">
-                <img
-                    src={MikroLogo}
-                    alt="Default Logo"
-                    className="logo-img"
-                />
-            </div>
-
-            <nav className="nav">
-                <Link to="/wire-cable" className="nav-link wire-cable">Wire & Cables</Link>
-                <Link to="/tools" className="nav-link tools">Tools</Link>
-                <Link to="/applications" className="nav-link applications">Applications</Link>
-                <Link to="/services" className="nav-link services">Services</Link>
-                <Link to="/about-us" className="nav-link about-us">About Us</Link>
-
-                {/* Eng Language Button with Dropdown */}
-                <div className="nav-link lang-selector" onClick={toggleDropdown}>
-                    🌐 Eng ▼
-                    {showDropdown && (
-                        <div className="dropdown">
-                            <div className="dropdown-item">🇪🇸 Spanish</div>
-                        </div>
-                    )}
-                </div>
-                <Link to="/contact-us" className="nav-link contact-us">Contact Us</Link>
-            </nav>
-        </header>
-    );
+        <div className="right-section">
+          <button className="language-selector">
+            <span>🌐</span>
+            <span>Eng</span>
+          </button>
+          <Link to="/contact" className="contact-button">Contact Us</Link>
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;

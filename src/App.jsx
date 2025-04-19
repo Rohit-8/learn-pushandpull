@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import Footer from './components/footer';
+import Home from './components/home';
 import './App.css';
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
 
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/wire-cables" element={<div>Wire & Cables Page</div>} />
         <Route path="/applications" element={<div>Applications Page</div>} />
         <Route path="/services" element={<div>Services Page</div>} />
