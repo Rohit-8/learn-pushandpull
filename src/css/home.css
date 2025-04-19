@@ -106,35 +106,40 @@
   width: 100%;
   padding: 120px 0;
   background: #FFFFFF;
+  position: relative;
 }
 
 .manufacturing-wrapper {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 120px;
-  display: flex;
-  justify-content: space-between;
-  gap: 120px;
+  position: relative;
 }
 
 .manufacturing-left {
-  flex: 1;
   max-width: 580px;
+  margin-bottom: 80px;
 }
 
 .manufacturing-title {
   margin-bottom: 32px;
+  width: 389px;
+  height: 120px;
 }
 
 .manufacturing-title h2 {
-  color: #2D1B1B;
-  font-family: 'Inter', sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 0;
+  font-family: 'Archivo', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
-  letter-spacing: -0.02em;
+  margin: 0;
+  background: linear-gradient(95.07deg, #170F10 0.48%, #EC1D36 89.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .manufacturing-description {
@@ -151,6 +156,9 @@
 
 .manufacturing-partnership {
   max-width: 320px;
+  position: absolute;
+  right: 120px;
+  top: 240px;
 }
 
 .manufacturing-partnership p {
@@ -177,20 +185,19 @@
 }
 
 .manufacturing-right {
-  flex: 1;
-  max-width: 600px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
 }
 
 .manufacturing-image-wrapper {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .manufacturing-image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  object-position: center 30%;
 } 

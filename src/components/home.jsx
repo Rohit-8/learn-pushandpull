@@ -41,14 +41,14 @@ const Home = () => {
                 lowest die cost per ton of wire drawn.
               </p>
             </div>
+          </div>
 
-            <div className="manufacturing-partnership">
-              <p>
-                Our partnership for excellence with our customers helps them Draw More, 
-                better, faster, and longer.
-              </p>
-              <button className="know-more-btn">Know More</button>
-            </div>
+          <div className="manufacturing-partnership">
+            <p>
+              Our partnership for excellence with our customers helps them Draw More, 
+              better, faster, and longer.
+            </p>
+            <button className="know-more-btn">Know More</button>
           </div>
 
           <div className="manufacturing-right">
