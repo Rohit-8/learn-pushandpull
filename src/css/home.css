@@ -1,17 +1,17 @@
 .home-container {
-  background-image: url('../assets/MMH112IMG_0368 (1) 1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
   width: 100%;
   position: relative;
+  margin-top: 74px;
 }
 
 .content {
   position: relative;
   z-index: 1;
-  height: 100vh;
+  background-image: url('../assets/MMH112IMG_0368 (1) 1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 74px);
   display: flex;
   flex-direction: column;
 }
@@ -99,4 +99,98 @@
   background: #F5F5F5;
   margin-left: -100px;
   padding-left: 150px;
+}
+
+/* Manufacturing Section Styles */
+.manufacturing-section {
+  width: 100%;
+  padding: 120px 0;
+  background: #FFFFFF;
+}
+
+.manufacturing-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.manufacturing-left {
+  flex: 1;
+  max-width: 580px;
+}
+
+.manufacturing-title {
+  margin-bottom: 32px;
+}
+
+.manufacturing-title h2 {
+  color: #2D1B1B;
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.manufacturing-description {
+  margin-bottom: 48px;
+}
+
+.manufacturing-description p {
+  color: #2D1B1B;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 520px;
+}
+
+.manufacturing-partnership {
+  max-width: 320px;
+}
+
+.manufacturing-partnership p {
+  color: #2D1B1B;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+}
+
+.know-more-btn {
+  background: #FF0000;
+  color: #FFFFFF;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.know-more-btn:hover {
+  background: #E60000;
+}
+
+.manufacturing-right {
+  flex: 1;
+  max-width: 600px;
+}
+
+.manufacturing-image-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.manufacturing-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 } 
