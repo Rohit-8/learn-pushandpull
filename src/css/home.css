@@ -104,34 +104,46 @@
 /* Manufacturing Section Styles */
 .manufacturing-section {
   width: 100%;
-  padding: 120px 0;
   background: #FFFFFF;
   position: relative;
+}
+
+.manufacturing-top-section {
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+  z-index: 2;
 }
 
 .manufacturing-wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 120px;
+  padding: 120px 120px 0 120px;
   position: relative;
+  background: #FFFFFF;
 }
 
 .manufacturing-left {
-  max-width: 580px;
+  max-width: 780px;
   margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+  background: #FFFFFF;
+  padding: 20px;
 }
 
 .manufacturing-title {
   margin-bottom: 32px;
   width: 389px;
-  height: 120px;
+  height: auto;
+  background: #FFFFFF;
 }
 
 .manufacturing-title h2 {
   font-family: 'Archivo', sans-serif;
   font-size: 40px;
   font-weight: 800;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   margin: 0;
@@ -140,25 +152,41 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.manufacturing-title h2 span {
+  display: block;
+  margin-bottom: 8px;
 }
 
 .manufacturing-description {
   margin-bottom: 48px;
+  background: #FFFFFF;
 }
 
 .manufacturing-description p {
   color: #2D1B1B;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.8;
   margin: 0;
-  max-width: 520px;
+  max-width: 660px;
+  letter-spacing: 0.02em;
+}
+
+.manufacturing-description p span.line-break {
+  display: block;
 }
 
 .manufacturing-partnership {
   max-width: 320px;
   position: absolute;
   right: 120px;
-  top: 240px;
+  top: 360px;
+  z-index: 2;
+  background: #FFFFFF;
+  padding: 20px;
 }
 
 .manufacturing-partnership p {
@@ -186,8 +214,10 @@
 
 .manufacturing-right {
   width: 100%;
-  height: 400px;
-  overflow: hidden;
+  height: 600px;
+  margin-top: -200px;
+  position: relative;
+  z-index: 1;
 }
 
 .manufacturing-image-wrapper {
