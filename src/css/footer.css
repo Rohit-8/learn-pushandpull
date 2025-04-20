@@ -1,107 +1,38 @@
-/* Sticky Footer Container (in App layout CSS or global) */
-body, html {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 .custom-footer {
-  background-color: #1f1f1f;
-  color: #fff;
-  padding: 30px 20px;
+  padding-top:100px;
+  padding-bottom: 50px;
+  background-color: #f1f2f2;
+  color: #000;
   font-family: Arial, sans-serif;
-  margin-top: auto; /* sticky bottom */
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #444;
-  padding-bottom: 20px;
-}
-
-.footer-left {
-  max-width: 300px;
 }
 
 .footer-logo {
-  width: 150px;
-  margin-bottom: 10px;
+  width: 140px;
 }
 
-.contact-info {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.footer-links .nav-link {
+  color: #000;
   font-size: 14px;
-  margin-bottom: 10px;
+  padding: 0 10px;
 }
 
-.underline {
-  border-bottom: 1px solid #555;
-  margin-top: 5px;
-  width: 100%;
-}
+/* .footer-links .nav-link:hover {
+  text-decoration: underline;
+} */
 
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.horizontal-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-}
-
-.horizontal-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.horizontal-links a:hover {
+.contact-info .footer-link {
+  color: #000;
+  font-size: 14px;
   text-decoration: underline;
 }
 
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.social-icons a {
-  color: #fff;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #00bcd4;
+.contact-info .footer-link:hover {
+  text-decoration: underline;
 }
 
 .footer-middle {
-  text-align: center;
-  margin: 15px 0;
-  font-size: 14px;
-  color: #ccc;
-}
-
-.footer-middle a {
-  color: #ccc;
-  text-decoration: none;
-}
-
-.footer-middle a:hover {
-  text-decoration: underline;
+  font-size: 13px;
+  color: #555;
 }
 
 .footer-middle .divider {
@@ -109,30 +40,6 @@ body, html {
 }
 
 .footer-bottom {
-  text-align: center;
-  font-size: 13px;
-  color: #888;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-left, .footer-right {
-    max-width: 100%;
-    align-items: center;
-  }
-
-  .horizontal-links {
-    justify-content: center;
-  }
-
-  .contact-info {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  font-size: 12px;
+  color: #777;
 }

@@ -1,7 +1,6 @@
 .home-container {
   width: 100%;
   position: relative;
-  margin-top: 74px;
 }
 
 .content {
@@ -18,24 +17,17 @@
 
 .hero-section {
   position: relative;
-  padding-top: 150px;
+  padding-top: 50px;
+  margin-top: 50px;
   margin-bottom: auto;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1116px;
-  height: 275px;
-  background: #FF0000BD;
-  z-index: -1;
+  background-image: url('../assets/Rectangle.png');
+  background-size: auto;
+  background-position: start;
+  background-repeat: no-repeat;
 }
 
 .hero-text {
-  padding: 40px 100px;
+  padding: 15px 100px;
 }
 
 .hero-text h1 {
@@ -47,6 +39,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 
 .company-info {
   display: flex;
@@ -118,7 +111,6 @@
 .manufacturing-wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 120px 120px 0 120px;
   position: relative;
   background: #FFFFFF;
 }
@@ -134,7 +126,7 @@
 
 .manufacturing-title {
   margin-bottom: 32px;
-  width: 389px;
+  width: 400px;
   height: auto;
   background: #FFFFFF;
 }
@@ -228,7 +220,7 @@
 .manufacturing-image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center 30%;
 }
 
@@ -258,24 +250,25 @@
 }
 
 .sets-apart-image img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 80%;
   object-fit: cover;
 }
 
 .sets-apart-overlay {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   background: rgba(255, 0, 0, 0.8);
-  padding: 30px;
-  text-align: center;
+  padding: 35px;
+  text-align: start;
 }
 
 .sets-apart-overlay h2 {
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 72px;
   font-weight: bold;
   margin: 0;
   line-height: 1.2;
@@ -395,7 +388,7 @@
 .services-left {
   width: 576px;
   position: absolute;
-  top: 146px;
+  top: 141px;
   left: 120px;
   display: flex;
   flex-direction: column;
@@ -430,10 +423,10 @@
 .service-header h3 {
   color: #FFFFFF;
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0;
-  text-transform: uppercase;
+  /* text-transform: lowercase; */
 }
 
 .service-header img {
@@ -469,7 +462,7 @@
 }
 
 .service-item.active {
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
 }
 
 .services-right {
@@ -495,18 +488,18 @@
 
 .services-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 36%;
+  left: 75%;
   transform: translate(-50%, -50%);
   background: rgba(255, 0, 0, 0.8);
-  padding: 30px 60px;
-  text-align: center;
+  padding: 10px 70px;
+  text-align: end;
   white-space: nowrap;
 }
 
 .services-overlay h2 {
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 72px;
   font-weight: bold;
   margin: 0;
   line-height: 1.2;
@@ -531,7 +524,7 @@
 
 @media (max-width: 1440px) {
   .services-left {
-    left: 5%;
+    left: 10%;
   }
   
   .services-right {

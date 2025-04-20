@@ -1,9 +1,10 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Header from './components/Header';
+import Header from './components/header';
 import Footer from './components/footer';
 import Home from './components/home';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/wire-cables" element={<div>Wire & Cables Page</div>} />
+        {/* <Route path="/wire-cables" element={<div>Wire & Cables Page</div>} />
         <Route path="/applications" element={<div>Applications Page</div>} />
         <Route path="/services" element={<div>Services Page</div>} />
         <Route path="/tools" element={<div>Tools Page</div>} />
@@ -20,6 +21,8 @@ const App = () => {
         <Route path="/about-us" element={<div>About Us Page</div>} />
         <Route path="/privacy-policy" element={<div>Privacy Policy</div>} />
         <Route path="/terms" element={<div>Terms & Conditions</div>} />
+        <Route path="/contact" element={<div>Contact Us Page</div>} />
+        <Route path="/login" element={<div>Login Page</div>} /> */}
       </Routes>
 
       <Footer />
