@@ -3,7 +3,6 @@ import "../css/footer.css";
 import Facebook from "../assets/Facebook.png";
 import Linkedin from "../assets/Linkedin.png";
 import Instagram from "../assets/Instagram.png";
-import MikroLogo from "../assets/MikroLogo.png";
 import Twitter from "../assets/Twitter.png";
 const Footer = () => {
   return (
@@ -12,7 +11,7 @@ const Footer = () => {
         <div className="row align-items-center">
           {/* Left Side: Logo + Contact */}
           <div className="col-md-6 mb-3 mb-md-0">
-            <img src={MikroLogo} alt="Mikro Logo" className="footer-logo mb-2" />
+            <img src="images/Mikro-logo.png" alt="Mikro Logo" className="footer-logo mb-2" />
             <div className="d-flex flex-wrap align-items-center gap-5 fw-semibold contact-info mt-4">
               <a href="mailto:info@mikro.org" className="footer-link">info@mikro.org</a>
               <span className="footer-link">+91 80 4268 8999</span>
@@ -30,11 +29,13 @@ const Footer = () => {
               <li className="nav-item"><a className="nav-link" href="#">About Us</a></li>
             </ul>
 
+            <hr className="underline"/>
+
             <div className="d-flex justify-content-md-end justify-content-center gap-3">
               <a href="#"><img src={Facebook} alt="Facebook" /></a>
               <a href="#"><img src={Instagram} alt="Instagram" /></a>
-              <a href="#"><img src={Twitter} alt="Twitter" /></a>
-              <a href="#"><img src={Linkedin} alt="LinkedIn" /></a>
+              <a href="#"><img src="images/Twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="images/Linkedin.png" alt="LinkedIn" /></a>
             </div>
           </div>
         </div>
@@ -42,9 +43,9 @@ const Footer = () => {
 
       {/* Middle Section */}
       <div className="text-center my-3 footer-middle">
-        <a href="#">Privacy Policy</a>
+        <a href="#" style={{color: "black"}}>Privacy Policy</a>
         <span className="divider">|</span>
-        <a href="#">Terms & Conditions</a>
+        <a href="#"  style={{color: "black"}}>Terms & Conditions</a>
       </div>
 
       {/* Bottom Section */}

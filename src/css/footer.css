@@ -1,5 +1,5 @@
 .custom-footer {
-  padding-top:100px;
+  padding-top: 100px;
   padding-bottom: 50px;
   background-color: #f1f2f2;
   color: #000;
@@ -8,6 +8,12 @@
 
 .footer-logo {
   width: 140px;
+}
+
+.underline {
+  width: 76%;
+  margin-left: 151px;
+  margin-top: 36px;
 }
 
 .footer-links .nav-link {
@@ -42,4 +48,154 @@
 .footer-bottom {
   font-size: 12px;
   color: #777;
+}
+
+/* Responsive Design for Tablets (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .custom-footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-logo {
+    width: 120px; /* Slightly smaller logo for tablets */
+  }
+
+  .contact-info {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .contact-info .footer-link {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+
+  .footer-links .nav-link {
+    font-size: 13px;
+    padding: 0 8px;
+  }
+
+  .underline {
+    width: 80%;
+    margin: 16px 9px 18px auto;
+  }
+
+  .d-flex.justify-content-md-end {
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+  .d-flex.justify-content-md-end img {
+    width: 28px; /* Slightly smaller social icons */
+    height: 28px;
+  }
+
+  .footer-middle {
+    font-size: 12px;
+    margin: 20px 0;
+  }
+
+  .footer-middle .divider {
+    margin: 0 8px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+    padding-bottom: 15px;
+  }
+
+  /* Adjust column spacing */
+  .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Responsive Design for Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+  .custom-footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer-logo {
+    width: 100px; /* Smaller logo for mobile */
+    display: block;
+    margin: 0 auto; /* Center logo */
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+
+  .contact-info .footer-link {
+    font-size: 12px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-links .nav-link {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .underline {
+    width: 90%;
+    margin: 20px auto; /* Center the line and adjust margin */
+  }
+
+  .d-flex.justify-content-md-end {
+    justify-content: center; /* Center social icons */
+    gap: 15px;
+  }
+
+  .d-flex.justify-content-md-end img {
+    width: 24px; /* Smaller social icons */
+    height: 24px;
+  }
+
+  .footer-middle {
+    font-size: 11px;
+    margin: 15px 0;
+  }
+
+  .footer-middle .divider {
+    margin: 0 5px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Ensure columns stack properly */
+  .col-md-6 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
