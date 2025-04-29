@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap');
+
+.mission-section {
+  background-image: url('../src//assets/RectangleVector.png');
+  /* background-color: #eeeeee; */
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.decor-vector {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  height: 80px;
+  z-index: 0;
+}
+
+.tab-labels {
+  position: relative;
+  z-index: 1;
+  padding-left: 53px;
+  padding-top: 1px;
+}
+
+.mission-text p {
+  font-size: 24px;
+  color:#170f10;
+  line-height: 156%;
+  padding: 10px 51px;
+}
+
+.custom-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.decor-vector {
+ 
+  position: absolute;
+  top: 0;
+  left:0;
+
+}
+
+.recsection{
+  position: relative;
+  left: 200px;
+  top: 185px ;
+}
+
+
+.vision-container {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+}
+
+.vision-text {
+  position: absolute;
+  top: 140%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}

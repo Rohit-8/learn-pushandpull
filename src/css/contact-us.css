@@ -1,0 +1,808 @@
+
+.banner-img {
+  width: 100%;
+  height: 600px;
+  display: block;
+  object-fit: cover;
+  top: -87px; 
+  position:relative;
+}
+
+.overlay-banner {
+  position: absolute;
+  top: 148px;
+  left: 0;
+  height: 196.5px;
+  background-image: url("/images/RectangleCon.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 223px;
+  box-sizing: border-box;
+}
+
+.overlay-banner h1 {
+  position:relative;
+  right:110px;
+  top:25px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 110%;
+  letter-spacing: -1.5%;
+  text-transform: uppercase;
+  color: white;
+  margin: 152;
+  justify-content: center; 
+  
+}
+.rectangleImg{
+  position:relative;
+  top: -151px;
+  left:-88px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner-img {
+    height: 400px;
+    object-fit: cover;
+    top: -50px;
+  }
+
+  .overlay-banner {
+    top: 180px;
+    left: 50px;
+    height: 150px;
+    padding: 1 100px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .overlay-banner h1 {
+    top: 210px;
+    left: 50px;
+    font-size: 42px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-img {
+    height: 250px;
+    top: -30px;
+    object-fit: cover;
+  }
+
+  .overlay-banner {
+    top: 120px;
+    left: 10px;
+    height: 100px;
+    padding: 0 20px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .overlay-banner h1 {
+    top: 140px;
+    left: 20px;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: left;
+  }
+}
+
+.contact-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact-section {
+  display: flex;
+  padding: 15px;
+  background-color:#EBECEC;
+  font-family: Arial, sans-serif;
+  justify-content: space-between;
+  gap: 21px;
+  flex-wrap: wrap;
+  margin-top:-153px;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left h1 {
+  color: transparent; 
+  font-family: 'Archivo', sans-serif; 
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  width: 384px; 
+  height: 80px; 
+  background: linear-gradient(95.07deg, #170F10 0.48%, #EC1D36 89.82%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+
+
+.contact-left h1 span {
+  color: #a42127;
+}
+
+.contact-left p {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 300px;
+  margin: 20px 0;
+  color:#4E4A45;
+  font-size: 16px;
+  height: 96px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #000;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+}
+ 
+.form-group input {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  width: 100%;  
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+  outline: none;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.consent input {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.consent label {
+  font-size: 13px;
+  color:#4E4A45;
+  ;
+}
+
+.submit-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-right {
+  background-image: url("/images/Rectangle1.png"); 
+  background-size: cover;
+  padding: 64px;
+  flex: 1;
+  color: #fff;
+  position: relative;
+  height: 500px;
+  top: 2px;
+  width: 690px;
+}
+
+ .getintouch-section {
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Archivo', sans-serif;
+}
+
+.getintouch-heading {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 100%;
+  letter-spacing: -1.5%;
+  text-transform: uppercase;
+  background: linear-gradient(95.07deg, #170F10 0.48%, #EC1D36 89.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 996px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.getintouch-subheading {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #4E4A45;
+}
+
+.getintouch-info {
+  display: flex;
+  justify-content: center;
+  gap: 95px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.getintouch-card {
+  max-width: 430px; /* Adjusted to match the description width */
+  text-align: left;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and title */
+  margin-bottom: 10px; /* Space between header and description */
+}
+
+.getintouch-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.getintouch-card h3 {
+  font-size: 16px;
+  color: #170F10;
+  margin: 0; /* Remove default margin for alignment */
+}
+
+.getintouch-card p {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #4E4A45;
+  width: 430px;
+  margin:64px; 
+  margin-top:-14px;/* Remove default margin */
+}
+
+.getintouch-map {
+  margin-top: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 0px 0px; /* vertical and horizontal gap */
+  margin-top: 40px;
+  max-width: 500px; /* Adjust according to design */
+}
+
+.stat-item {
+  color: #170F10;
+  padding: 20px;
+  text-align: right;
+  border-radius: 8px; 
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  width: 168px;
+  height: 100px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.stat-item strong {
+  font-size: 23px;
+}
+
+.stat-item span {
+  color: #4E4A45;
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: -65px;
+}
+
+.floating-label {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.floating-label input {
+  width: 100%;
+  padding: 12px 5px 8px 5px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+
+.floating-label label {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  color:#BDAFAF;
+  font-size: 20px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.floating-label input:focus ~ label,
+.floating-label label.active {
+  top: -10px;
+  left: 5px;
+  font-size: 12px;
+  color:#4E4A45;
+  ;
+}
+
+.floating-label input::placeholder {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.floating-label input:focus::placeholder {
+  opacity: 0;
+}
+.formss{
+  margin-top:55px;
+}
+
+.ContactRectangleImg{
+  position:relative;
+  top: 590px;
+  left:-88px;
+
+}
+
+/* Tablet devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .ContactRectangleImg {
+    top: 1114px;
+    left: -50px;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .ContactRectangleImg {
+    top: 400px;
+    left: -20px;
+  }
+}
+
+/* Extra small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .ContactRectangleImg {
+    top: 300px;
+    left: -69px;
+  }
+}
+
+
+/* Responsive for pad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner-img {
+    height: 400px; /* Reduced height for tablets */
+    top: -50px; /* Adjusted to prevent excessive overlap */
+    object-fit: cover;
+  }
+
+  .overlay-banner {
+    top: 100px; /* Adjusted for better vertical alignment */
+    left: 0;
+    height: 180px; /* Slightly larger than original for balance */
+    padding: 0 10%; /* Reduced padding for tablet screens */
+    background-size: contain;
+    background-position: center;
+  }
+
+  .overlay-banner h1 {
+    font-size: 48px; /* Slightly larger than original for readability */
+    line-height: 1.2; /* Improved line spacing */
+    text-align: center;
+    position: static; /* Removed relative positioning for simpler layout */
+  }
+
+  .rectangleImg {
+    top: -111px; /* Adjusted for tablet */
+    left: -634px; /* Reduced offset for smaller screens */
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  /* Contact Section */
+  .contact-section {
+    padding: 32px;
+    gap: 15px;
+    margin-top: -113px; /* Adjusted for smaller screens */
+  }
+
+  .contact-section .container {
+    flex-direction: column; /* Stack left and right sections */
+    gap: 20px;
+  }
+
+  .contact-left {
+    min-width: 100%; /* Full width on tablets */
+  }
+
+  .contact-left h1 {
+    font-size: 65px;
+    width: 100%; /* Full width for responsiveness */
+    height: auto;
+  }
+
+  .contact-left p {
+    font-size: 22px;
+    height: auto; /* Remove fixed height */
+  }
+
+  .contact-right {
+    width: 100%; /* Full width */
+    height: 550px !important; /* Reduced height */
+    padding: 40px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    max-width: 84%;
+  }
+
+  .stat-item {
+    font-size: 20px;
+    width: 100%; /* Full width within grid */
+    height: 80px;
+    padding: 15px;
+  }
+
+  .stat-item strong {
+    font-size: 36px;
+  }
+
+  .stat-item span {
+    font-size: 19px;
+    margin-right: -40px;
+  }
+
+  /* Form Adjustments */
+  .form-row {
+    flex-direction: column; /* Stack form inputs vertically */
+    gap: 15px;
+  }
+
+  .form-group input {
+    font-size: 16px;
+    height: 28px;
+    padding: 6px;
+  }
+
+  .floating-label label {
+    font-size: 16px;
+  }
+
+  .floating-label input:focus ~ label,
+  .floating-label label.active {
+    font-size: 10px;
+  }
+
+  .submit-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .consent label {
+    font-size: 12px;
+  }
+
+  /* Get In Touch Section */
+  .getintouch-section {
+  padding: 68px 15px !important ;
+  }
+
+  .getintouch-heading {
+    font-size: 48px; /* Reduced font size */
+    width: 100%; /* Full width */
+    height: auto; /* Auto height for flexibility */
+    margin: 0 auto;
+  }
+
+  .getintouch-subheading {
+    font-size: 19px;
+    margin-top: 15px;
+  }
+
+  .getintouch-info {
+    gap: 40px; /* Reduced gap */
+    justify-content: start;
+  }
+
+  .getintouch-card {
+    max-width: 100%; /* Full width for cards */
+  }
+
+  .getintouch-card p {
+    font-size: 17px;
+    width: 100%; /* Full width */
+    margin: 20px 0; /* Adjusted margins */
+  }
+
+  .getintouch-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .getintouch-card h3 {
+    font-size: 19px;
+  }
+
+  .getintouch-map {
+    margin-top: 5px;
+  }
+
+  .getintouch-info {
+    gap: 59px;
+  }
+}
+
+/* Additional Media Query for Smaller Tablets (below 768px) */
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 32px;
+    margin-top: -114px;
+  }
+
+  .contact-left h1 {
+    font-size: 28px;
+  }
+
+  .contact-right {
+    height: 300px;
+    padding: 20px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr; /* Single column for smaller tablets */
+  }
+
+  .stat-item {
+    width: 100%;
+    height: auto;
+    text-align: left;
+  }
+
+  .stat-item span {
+    margin-right: 0;
+  }
+
+  .getintouch-heading {
+    font-size: 36px;
+  }
+
+  .getintouch-info {
+    gap: 20px;
+  }
+}
+
+ /* media query for mobile device contact section and get in touch section  */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 24px 12px;
+    gap: 12px;
+  }
+
+  .contact-section .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contact-left h1 {
+    font-size: 28px;
+    /* max-width: 100%; */
+  }
+
+  .contact-left p {
+    font-size: 13px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+    height: 26px;
+  }
+
+  .contact-right {
+    height: 250px;
+    padding: 24px;
+  }
+
+  .getintouch-heading {
+    font-size: 32px;
+    max-width: 100%;
+  }
+
+  .getintouch-subheading {
+    font-size: 13px;
+  }
+
+  .getintouch-info {
+    gap: 24px;
+  }
+
+  .getintouch-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .stat-item {
+    font-size: 13px;
+    padding: 4px;
+  }
+
+  .stat-item strong {
+    font-size: 18px;
+  }
+
+  .stat-item span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 16px 8px;
+    ;
+  }
+
+  .contact-left h1 {
+    font-size: 35px;
+    padding-top: 71px
+  }
+
+  .contact-left p {
+    font-size: 12px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .form-group input {
+    font-size: 13px;
+    height: 24px;
+  }
+
+  .submit-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .contact-right {
+    height: 200px;
+    padding: 16px;
+  }
+
+  .getintouch-heading {
+    font-size: 28px;
+  }
+
+  .getintouch-subheading {
+    font-size: 12px;
+  }
+
+  .getintouch-card h3 {
+    font-size: 13px;
+  }
+
+  .getintouch-card p {
+    font-size: 11px;
+  }
+
+  .floating-label input {
+    font-size: 13px;
+    padding: 8px 3px 5px 3px;
+  }
+
+  .floating-label label {
+    font-size: 14px;
+    top: -10px;
+  }
+
+  .floating-label input:focus ~ label,
+  .floating-label label.active {
+    font-size: 9px;
+    top: -7px;
+  }
+
+  .getintouch-map {
+    margin-top: 4px;
+  }
+}
+
+
+/* Existing mobile media query (unchanged for reference) */
+@media (max-width: 576px) {
+  .banner-img {
+    height: 19vh; /* Relative height for flexibility */
+    top: -5vw; /* Scaled offset */
+    object-fit: cover;
+  }
+
+  .overlay-banner {
+    top: 3vh; /* Adjusted for mobile */
+    left: 0;
+    height: 20vh; /* Relative height */
+    padding: 0 5%; /* Flexible padding */
+    /* background: #333 url("/images/RectangleCon.png") no-repeat center/contain; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay-banner h1 {
+    font-size: 6vw; /* Scales with screen width */
+    line-height: 1.3; /* Improved readability */
+    text-align: center;
+    position: static; /* Simplified positioning */
+    margin: 0;
+    color: white;
+  }
+
+  .rectangleImg {
+    top: -10vw; /* Scaled offset */
+    left: 10vw; /* Minimal offset for alignment */
+    max-width: 90%; /* Prevents overflow */
+  }
+}
+
+@media (max-width: 1366px) {
+  .getintouch-map{
+  width: 792px;
+  height: 445.5pxpx;
+
+  }
+  
+}
